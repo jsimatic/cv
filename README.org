@@ -1,0 +1,35 @@
+#+Title: Curriculum Vitae
+
+* About
+
+English and French paper version of my curriculum vitae, based on modercv. See
+online CV at http://vizualize.me/jsimatic.
+
+* Usage
+
+I use ~latexmk~ to build the tex files. See config in ~.latexmk.rc~. To build
+all PDFs, use:
+
+#+BEGIN_SRC sh
+latexmk
+#+END_SRC
+
+During editions, the continuous preview of ~latexmk~ is very useful : When a
+change is detected, the new PDF is automatically recompiled. Use:
+
+#+BEGIN_SRC sh
+latexmk -pvc cv_<LANG>
+#+END_SRC
+
+Where ~<LANG>~ is either ~en~ (English) or ~fr~ (French).
+
+Generated files can be erased with ~latexmk -c~ (do *not* removes PDFs) or
+~latexmk -C~ (removes PDFs).
+
+* TODOs
+
+1. Separate business and academic versions
+   - Academic :: PhD in education, second page with publications
+   - Business :: PhD in employement, sigle page
+2. Separate primary author and co-author publications
+3. Better internationalization

@@ -1,0 +1,163 @@
+% This file was created with JabRef 2.11dev.
+% Encoding: UTF-8
+
+
+@Misc{Simatic17c,
+  Title                    = {{ALPS}: A High-Level Design and Synthesis Framework for Event-Driven Sampling and Digital Signal Processing},
+
+  Author                   = {J. Simatic and R. P. Bastos and L. Fesquet},
+  HowPublished             = {Submitted to ACM Transtactions on Automated Design of Electronic Systems (TODAES)},
+  Year                     = {2017},
+
+  File                     = {file:our_publications_and_brainstorms/2017/TODAES/Text-ALPS_A_high-level_design_and_synthesis_framework_for_event-driven_sampling_and_digital_signal_processing/top.pdf:pdf}
+}
+
+
+@Misc{pySpass,
+  Title                    = {{pySPASS}: {P}ython {S}ignal {P}rocessing for {AS}ynchronous {S}ystems},
+
+  Author                   = {Jean Simatic and Brigitte Bid{\'e}garay-Fesquet},
+  HowPublished             = {Software, \url{https://forge.imag.fr/projects/pyspass/} [accessed 2017-06-28]},
+  Month                    = {March},
+  Year                     = {2017},
+
+  Link                     = {https://forge.imag.fr/projects/pyspass/}
+}
+
+@InProceedings{Simatic17a,
+  Title                    = {A Practical Framework for Specification, Verification, and Design of Self-Timed Pipelines},
+  Author                   = {J. Simatic and A. Cherkaoui and F. Bertrand and R. P. Bastos and L. Fesquet},
+  Booktitle                = {2017 23rd IEEE International Symposium on Asynchronous Circuits and Systems (ASYNC)},
+  Year                     = {2017},
+  Month                    = {May},
+  Pages                    = {65-72},
+
+  Abstract                 = {Asynchronous circuits are interesting alternatives for implementing ultra-low power systems but they are more challenging to design. This work provides methods for designers to specify, verify, and implement self-timed pipelines. The connection of standard primitives allows specifying a control circuit. A method to derive a Petri net based model of this circuit is presented. The modeled transactions are only those necessary at a high level for the circuit verification and performance analysis. Additionally, the proposed framework includes merge and split choice structures in the control circuit for further reducing the power consumption of the targeted systems. It is associated with a design flow which uses standard EDA tools. The paper presents two practical examples illustrating how this framework can be used to design low-power systems based on a datapath specification: a finite impulse response (FIR) filter and an advanced encryption standard (AES) cipher. The obtained asynchronous FIR is 20\% smaller and consumes 30\% less energy compared to the synchronous design. The obtained asynchronous AES is 2\% larger but consumes three times less energy than its synchronous counterpart.},
+  Doi                      = {10.1109/ASYNC.2017.16},
+  File                     = {file:our_publications_and_brainstorms/2017/ASYNC/Text-A_practical_framework_fot_the_specification_the_verification_and_the_design_of_micropipeline_circuits/submission_files/paper_12_final.pdf:pdf},
+  Keyword                  = {Computational modeling;Data models;Integrated circuit modeling;Petri nets;Pipelines;Registers;Synchronization;Asynchronous design;Petri net model;choice structure;self-timed pipelines}
+}
+
+@InProceedings{Simatic15,
+  Title                    = {Correctly sizing {FIR} filter architecture in the framework of non-uniform sampling},
+  Author                   = {J. Simatic and L. Fesquet and B. Bidegaray-Fesquet},
+  Booktitle                = {International Conference on Sampling Theory and Applications (SampTA)},
+  Year                     = {2015},
+  Pages                    = {269-273},
+
+  Abstract                 = {Based on non-uniform sampling techniques and event-driven logic, signal processing is evolving to integrate new demands such as power consumption. As power is mainly connected to the processing activity and data volume, the level-crossing sampling scheme offers a simple way to reduce data volume and consequently processing activity. Nevertheless, these good properties could be constraining for the designers because of the non-predictable sample number that can be involved in the processing. In this paper, we target a FIR filter architecture and show how to correctly size its input shift-register. This paper shows a strategy to choose the shift-register depth but also a way to dynamically adapt the computation to an heterogeneous data flow.},
+  Doi                      = {10.1109/SAMPTA.2015.7148894},
+  File                     = {file:our_publications_and_brainstorms/2015/SampTA/Text-Correctly_Sizing_FIR_Filter_Architecture_In_The_Framework_Of_Non-Uniform_Sampling/BFS.pdf:pdf},
+  Keyword                  = {FIR filters;power consumption;shift registers;signal sampling;FIR filter architecture;correct sizing;data volume reduction;event-driven logic;finite impulse response filter;heterogeneous data flow;level-crossing sampling scheme;nonuniform sampling technique;power consumption;processing activity;shift-register depth;signal processing;Computer architecture;Convolution;Finite impulse response filters;Hardware;Interpolation;Shift registers}
+}
+
+@Misc{Fesquet17,
+  Title                    = {Event-based design for mitigating energy in electronic systems},
+
+  Author                   = {L. Fesquet and J. Simatic and A. Darwish and A. Cherkaoui},
+  HowPublished             = {Keynote talk at OAGM \& ARW Joint Workshop on ``Computer Vision and Robotics''},
+  Month                    = {May},
+  Year                     = {2016}
+}
+
+@InProceedings{Simatic15a,
+  Title                    = {Flot de conception pour l'ultra-faible consommation : {\'e}chantillonage non-uniforme et {\'e}lectronique asynchrone},
+  Author                   = {J. Simatic and R. Possamai Bastos and L. Fesquet},
+  Booktitle                = {Journ{\'e}es Nationales du R{\'e}seau Doctoral en Micro-nano{\'e}lectronique (JNRDM)},
+  Year                     = {2015},
+
+  File                     = {file:our_publications_and_brainstorms/2015/JNRDM/Text-Flot_De_Conception_Pour_L_Ultra_Faible_Consommation/jnrdm_2015.pdf:pdf}
+}
+
+@InProceedings{Simatic16a,
+  Title                    = {High-level synthesis for event-based systems},
+  Author                   = {J. Simatic and R. P. Bastos and L. Fesquet},
+  Booktitle                = {2nd International Conference on Event-based Control, Communication, and Signal Processing (EBCCSP)},
+  Year                     = {2016},
+  Month                    = {June},
+  Pages                    = {1-7},
+
+  Abstract                 = {This paper envisions a design flow for empowering designers in the fast development of low-power event-driven processing chains. This flow takes advantage of level-crossing sampling schemes and asynchronous circuitry. Event-driven paradigm allows better-than-worst-case performance during periods of high-activity of the captured signal as well as a natural stand-by during low-activity periods. The proposed flow uses the specific knowledge of the targeted application and its signals, and a high-level description of the processing algorithm to synthesize a dedicated analog-to-digital converter, which performs the level-crossing sampling, and a digital signal processing unit. The latter is synthesized thanks to a high-level synthesis algorithm following a control/datapath decomposition style. The asynchronous control part is based on distributed asynchronous controllers while the datapath remains similar to a synchronous datapath.},
+  Doi                      = {10.1109/EBCCSP.2016.7605252},
+  File                     = {file:our_publications_and_brainstorms/2016/EBCCSP/Text-A_flow_for_HLS_of_event-based_low-power_systems/top.pdf:pdf},
+  Keyword                  = {analogue-digital conversion;asynchronous circuits;digital signal processing chips;high level synthesis;analog-to-digital converter;asynchronous circuitry;control-datapath decomposition style;digital signal processing unit;distributed asynchronous controllers;event-based systems;high-level synthesis algorithm;level-crossing sampling schemes;low-power event-driven processing chains;synchronous datapath;Algorithm design and analysis;Digital signal processing;Power demand;Radiation detectors;Resource management;Signal processing algorithms;Standards}
+}
+
+@InProceedings{Qaisar17,
+  Title                    = {High-level Synthesis of an Event-Driven Windowing Process},
+  Author                   = {S. M. Qaisar and J. Simatic and L. Fesquet},
+  Booktitle                = {3rd International Conference on Event-based Control, Communication and Signal Processing (EBCCSP)},
+  Year                     = {2017},
+  Month                    = {May},
+  Pages                    = {1-8},
+
+  Abstract                 = {This work is a contribution to enhance the signal processing chain required in modern systems. The idea is to take advantage of the interesting features of both event-driven and well-established uniform sampling and signal processing algorithms. In this context, authors have proposed original windowing techniques for the event-driven sampled signal, activity selection and local parameter extraction. These are called as Activity Selection Algorithms (ASA). The proposed techniques correlate the windowing function length, shape and resampling frequency with the input signal time variations. In this paper, the ASA and an adaptive rate resampler with zero order interpolation are implemented in C. Using high level synthesis tools, synchronous and asynchronous register transfer level descriptions are synthesized on a commercial CMOS 40 nm technology. The synthesis results are presented. A comparison of the average power consumption between asynchronous and synchronous implementations is made. The proposed system functionality is also verified with the help of analytic test signals. Results have shown a compression, in terms of samples, of 1.5 to 1.6 respectively compared to the simple event-driven level-crossing sampling and by 5.8 to 9.3 compared to the uniform sampling based systems. The asynchronous (resp. synchronous) implementation of ASA and resampler only consumes in average 28pJ/sample (resp. 238 pJ/sample).},
+  Doi                      = {10.1109/EBCCSP.2017.8022807},
+  File                     = {file:our_publications_and_brainstorms/2017/EBCCSP/Text-HLS_of_an_event-driven_windowing_process/top.pdf:pdf},
+  Keyword                  = {Hysteresis;Power demand;Signal processing algorithms;Signal resolution;Time-frequency analysis;Activity selection;Adaptative rate resampling;Asynchronous circuits;Event-driven sampling;High-level synthesis}
+}
+
+@Misc{Simatic17b,
+  Title                    = {Late Protocols: Forgotten Opportunity for Energy-efficient Asynchronous Pipelines},
+
+  Author                   = {J. Simatic and A. Cherkaoui and R. P. Bastos and L. Fesquet},
+  HowPublished             = {Submitted to IEEE Design \& Test},
+  Year                     = {2017},
+
+  File                     = {file:our_publications_and_brainstorms/2017/DT/Text-Late_protocols_A_forgotten_opportunity_for_energy-efficient-asynchronous-pipelines/top.pdf:pdf}
+}
+
+@InProceedings{Simatic16,
+  Title                    = {New asynchronous protocols for enhancing area and throughput in bundled-data pipelines},
+  Author                   = {J. Simatic and A. Cherkaoui and R. P. Bastos and L. Fesquet},
+  Booktitle                = {29th Symposium on Integrated Circuits and Systems Design (SBCCI)},
+  Year                     = {2016},
+  Month                    = {Aug},
+  Pages                    = {1-6},
+
+  Abstract                 = {This paper presents two new area-reduced controllers for bundled-data asynchronous pipelines in which the stages have long critical paths. The proposed protocols allow to reduce the number of required delay elements by using the falling edge of the asynchronous request to indicate data validity. For critical path lengths of 25 gates, the first presented scheme decreases the controller area by 48\% and slightly increases the maximum throughput (2\%) in comparison to a standard micropipeline implementation. The other more-concurrent scheme proposition leads to a 25\% area reduction and a 40\% improvement of the maximum pipeline throughput.},
+  Doi                      = {10.1109/SBCCI.2016.7724066},
+  File                     = {file:our_publications_and_brainstorms/2016/SBCCI/Text-New_asynchronous_protocols_for_enhancing_area_and_throughput_in_BD_pipelines/top.pdf},
+  Keyword                  = {Clocks;Delays;Pipeline processing;Pipelines;Protocols;Throughput;Wires}
+}
+
+@InProceedings{El-Hadbi17,
+  Title                    = {On-the-fly and sub-gate-delay resolution {TDC} based on self-timed ring: A proof of concept},
+  Author                   = {A. El-Hadbi and A. Cherkaoui and O. Elissati and J. Simatic and L. Fesquet},
+  Booktitle                = {15th IEEE International New Circuits and Systems Conference (NEWCAS)},
+  Year                     = {2017},
+  Month                    = {June},
+  Pages                    = {305-308},
+
+  Abstract                 = {A new fully digital high resolution time-to-digital converter (TDC) based on a self-timed ring oscillator (STR) is presented. The proposed TDC can virtually achieve as fine as desired time resolution by simply increasing its number of stages thanks to the STR unique features. Moreover, the proposed technique allows on-the-fly time measurement on fast non-periodic signals. The TDC has been implemented using 28 nm FDSOI technology to provide a proof of concept of the proposed method. Simulation results point out the advantage of this TDC in terms of measurement accuracy.},
+  Doi                      = {10.1109/NEWCAS.2017.8010166},
+  Keyword                  = {Delays;Logic gates;Oscillators;Propagation delay;Radiation detectors;Signal resolution}
+}
+
+@InProceedings{Skaf17,
+  Title                    = {Seeking low-power synchronous/asynchronous systems: A {FIR} implementation case study},
+  Author                   = {A. Skaf and J. Simatic and L. Fesquet},
+  Booktitle                = {IEEE International Symposium on Circuits and Systems (ISCAS)},
+  Year                     = {2017},
+  Month                    = {May},
+  Pages                    = {1-4},
+
+  Abstract                 = {Seeking low-power consumption high-performance embedded systems has been at the center of interest for researchers around the world for the last decades, especially with the recent boom of different hand-held battery-operated mobile connected devices. The new trends and needs of faster, smarter and smaller internet connected systems, also known as the IoT, require developing very-low power embedded systems including actuators, sensors and signal processors. In this paper, we focus on the architecture optimization efforts to reduce the required activity using the FIR filter as a demonstration example. The new optimized implementation of the FIR filter was compared with other synchronous and asynchronous FIR filter versions realized using the ALPS framework developed at TIMA laboratory. The obtained FIR architecture exhibits 43\% less area and up to 61\% power consumption reduction compared to the best previous synchronous implementation. We plan to use these results to improve the automatically generated datapath of the high-level synthesis tool of our framework (ALPS-HLS).},
+  Doi                      = {10.1109/ISCAS.2017.8050379},
+  File                     = {file:our_publications_and_brainstorms/2017/ISCAS/Text-Seeking_low-power_sync_async_embedded_systems/top.pdf:pdf},
+  Keyword                  = {Clocks;Computer architecture;Data processing;Finite impulse response filters;Power demand;Registers;Tools;IoT;asynchronous circuits;event-driven sampling;low-power embedded systems;optimized synchronous design}
+}
+
+@Other{Simatic,
+  Entryset                 = {Simatic15, Simatic15a, Simatic16, Simatic16a, Simatic17, Simatic17b, Simatic17c, Qaisar17, El-Hadbi17, Skaf17, Fesquet17}
+}
+
+@Misc{Tiempo,
+  Author                   = {Tiempo},
+  HowPublished             = {http://www.tiempo-secure.com/technology/asynchronous-design-technology}
+}
+
+@comment{jabref-meta: databaseType:bibtex;}
+
+@comment{jabref-meta: fileDirectory:.;}
+

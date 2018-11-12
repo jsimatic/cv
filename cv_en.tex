@@ -1,0 +1,120 @@
+\documentclass[11pt, a4paper]{moderncv}
+\moderncvtheme[orange]{classic}
+
+\usepackage[utf8]{inputenc}
+
+% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths
+\newcommand{\ALPS}{Architectural tools for ultra-Low Power (event-driven) Systems}
+%\sethintscolumntowidth{November 2014}
+
+% Personal data
+\firstname{Jean}
+\familyname{Simatic}
+\address{37, rue Raymond de Mareuil}{91470 Mennecy, France}
+\mobile{+33 6 28 13 37 12}
+\email{jean@simatic.org}
+%\photo[64pt]{}
+%\nopagenumbers{}
+\title{Asynchronous microelectronics PhD candidate}
+\begin{document}
+\maketitle
+
+\vspace{-.75cm}
+
+\section{Education}
+\cventry{2014 --- 2017}{PhD Thesis}{TIMA Laboratory}{Grenoble, France}{}{%
+  Design flow for ultra-low power: non-uniform sampling and asynchronous circuits}
+\cventry{2013 --- 2014}{Master}{ENSTA}{%
+  Robotics and Embedded Systems}{}{%
+  Multiprocessors on chip, embedded software, robotics, mecatronics}
+\cventry{2013 --- 2014}{Master}{UPMC}{%
+  Electronic Systems and Computer Systems}{}{%
+  Mixed and analog circuit design, noise, design for test, MEMS}
+\cventry{2010 --- 2013}{Engineering}{{\'E}cole polytechnique}{Electrical
+  Engineering major}{}{Digital circuit design, processor architecture,
+  semi-conductors, optoelectronics,\\ network (Internet), statistics}
+
+\section{Experience}
+\cventry{2017 --- Auj.}{Startup incubation and executive direction}{Hawai.tech}%
+        {Grenoble, France}{}{%
+          \begin{itemize}
+          \item Design of a modular architecture for low-power probabilistic circuits.
+          \item Commercial and financial development.
+          \end{itemize}
+        }
+\cventry{2014\\6 months}{Intern}{Tiempo}%
+        {Montbonnot Saint Martin, France}{}{%
+          \begin{itemize}
+          \item Design of a verification tool for standard cells Verilog modules
+          \item Evaluation of a commercial fault simulator on QDI circuits
+          \end{itemize}
+        }
+\cventry{2013\\4 months}{Intern}{Asynchronous Research Center}%
+        {Portland (Oregon), USA}{}{%
+          \begin{itemize}
+          \item Design of asynchronous IP for merge sort
+          \item Contribution to the development of a CAD tool (ARCWelder)
+          \end{itemize}
+        }
+\cventry{2012\\1 months}{Intern}{EADS Astrium, Digital electronic department}%
+        {{\'E}lancourt, France}{}{%
+          \begin{itemize}
+          \item Development of a test environment for a spatial CAN bus
+          \end{itemize}
+        }
+\cventry{2011 --- 2012\\1 year}{Electronic designer and treasurer}{Robotic
+  club at {\'E}cole polytechnique}%
+        {}{}{%
+          Participation to French Robotic Cup
+          \begin{itemize}
+          \item Design and fabrication of the electronic boards of the robot
+          \item Financial management of the project
+          \end{itemize}
+        }
+
+\section{Skills}
+\cvline{EDA Tools}{ModelSim, Design Compiler, Quartus}
+\cvline{Programming}{VHDL, Verilog, SystemC, Spice, Python, Java, GNU Make, C/C++, PHP, Caml}
+\cvline{OS}{Linux (Ubuntu, ArchLinux), Windows, RTEMS}
+\cvline{Misc}{Git, Subversion, \LaTeX, Scilab, Matlab, Eclipse}
+
+\section{Languages}
+\cvcomputer{French}{Native language}{German}{Conversational}
+\cvcomputer{English}{Fluent}{Portuguese}{Conversational}
+
+\section{Interests}
+\cvline{Music}{Viola and trumpet player in orchestras and marching bands. Classical and Jazz amateur.}
+\cvline{Sports}{Badminton, hiking and cross-country skiing.}
+\cvline{Pyrotechnics}{C4/T2 trained firework firer.}
+
+\closesection{}
+\pagebreak
+
+\sethintscolumntowidth{Co-advisor}
+
+% Academic
+\section{PhD Thesis}
+\cvline{Title}{Design flow for ultra-low power: Non-uniform sampling and
+  asynchronous circuits}
+\cvline{Advisor}{Laurent Fesquet}
+\cvline{Co-advisor}{Rodrigo Possamai Bastos}
+\cvline{Abstract}{%
+  The Internet of Things requires developing ultra-low power platforms embedding
+  actuators, sensors, and signal processors. Event-driven sampling and circuitry
+  allow reducing the amount of sampled data, the system activity, and therefore
+  the power consumption. For helping designers in rapidly developing
+  event-driven ultra-low power platforms, we have devised a complete framework
+  named ALPS: \ALPS{}. ALPS framework will allow to choose and simulate a
+  signal-specific sampling scheme, and to synthesize a dedicated event-driven
+  circuit for processing the non-uniformly sampled data. The estimated power
+  reduction factor for a the event-driven version of a filter systems is from 3
+  to 30 depending on the input signal activity.
+}
+
+\renewcommand{\refname}{Publications}
+\nocite{Simatic17a, Skaf17, Qaisar17, El-Hadbi17, Simatic16a, Simatic16, Simatic15}
+\bibliographystyle{IEEEtran}
+\bibliography{publications}
+\end{document}

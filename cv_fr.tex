@@ -1,0 +1,150 @@
+\documentclass[11pt]{moderncv}
+\moderncvtheme[orange]{classic}
+
+\usepackage[utf8]{inputenc}
+
+% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths
+\newcommand{\ALPS}{Architectural tools for ultra-Low Power (event-driven) Systems}
+%\sethintscolumntowidth{November 2014}
+
+% Personal data
+\firstname{Jean}
+\familyname{Simatic}
+\address{37, rue Raymond de Mareuil}{91470 Mennecy, France}
+\mobile{+33 6 28 13 37 12}
+\email{jean@simatic.org}
+%\photo[64pt]{}
+%\nopagenumbers{}
+\title{Président startup technologique Hawai.tech}
+\begin{document}
+\maketitle
+
+\vspace{-.75cm}
+
+\section{Formation}
+\cventry{2014 --- 2017}{Thèse de doctorat}{Laboratoire TIMA}{Grenoble, France}{}{%
+  Flot de conception pour la faible consommation : 
+  échantillonage non uniforme et circuits asynchrones}
+\cventry{2013 --- 2014}{Master}{Université Pierre et Marie Curie}{%
+  Systèmes électroniques et systèmes informatiques}{}{%
+  Circuits mixtes et analogiques, bruit, conception pour le test, MEMS}
+\cventry{2013 --- 2014}{Ingénieur}{ENSTA ParisTech}{%
+  Robotique et Systèmes Embarqués}{}{%
+  Multiprocesseur sur puce, logiciel embarqué, robotique, mécatronique}
+\cventry{2010 --- 2013}{Ingénieur}{École polytechnique}{%
+  Electrical Engineering}{}{%
+  Circuits numériques ASIC et FPGA, architecture des processeurs,
+  semi-conducteurs,\\optoélectronique, réseau, statistiques}
+% \cventry{2008 --- 2010}{Classe préparatoires}{Lycée Janson de Sailly}{%
+%   Maths Physique option Informatique}{}{}
+% \cventry{2008}{Baccalauréat}{Lycée Jules Verne}{%
+%   Limours, France}{Mention Très bien}{}
+
+\section{Expérience}
+\cventry{2017 --- Auj.}{Incubation et présidence d'une startup}{Hawai.tech}%
+        {Grenoble, France}{}{%
+          \begin{itemize}
+          \item Conception d'une architecture modulaire pour des circuits probabilistes basse-consommation.
+          \item Développement commercial et financier.
+          \end{itemize}
+        }
+\cventry{2014\\6 mois}{Stage de fin d'étude}{Tiempo Secure}%
+        {Montbonnot Saint Martin, France}{}{%
+          \begin{itemize}
+          \item Conception d'un outil de vérification pour des modèles
+            Verilog de cellules standards.
+          \item \'Evaluation d'un outils commercial de simulation de
+            fautes sur des circuits QDI.
+          \end{itemize}
+        }
+\cventry{2013\\4 mois}{Stage de recherche}{Asynchronous Research Center}%
+        {Portland (Oregon), USA}{}{%
+          \begin{itemize}
+          \item Conception de composants asynchrones réalisant un tri fusion.
+          \item Contribution au développement d'un outil de CAO (ARCWelder).
+          \end{itemize}
+        }
+\cventry{2012\\1 mois}{Stage}{EADS Astrium, Groupe électronique numérique}%
+        {Élancourt, France}{}{%
+          \begin{itemize}
+          \item Développement d'un environnement de test pour un bus CAN spatial.
+          \end{itemize}
+        }
+\cventry{2011 -- 2012\\1 an}{Coupe de Fance de robotique}{Club de
+  robotique de l'École polytechnique}%
+        {}{}{%
+          \begin{itemize}
+          \item Co-responsable électronique : Conception et réalisation des cartes électroniques du robot
+          \item Trésorier : Gestion financière du projet
+          \end{itemize}
+        }
+
+\section{Compétences}
+
+\cvline{Outils CAO}{ModelSim, Design Compiler, Quartus, CatapultC}
+\begingroup
+\sethintscolumntowidth{Programmation}
+\cvline{Programmation}{VHDL, Verilog, SystemC, Spice, Python, Java, GNU Make, C/C++}
+\endgroup
+\cvline{OS}{Linux (Ubuntu, ArchLinux), Windows, RTEMS}
+\cvline{Divers}{Git, Subversion, \LaTeX, Scilab, Matlab, Eclipse}
+
+\section{Langues}
+\cvcomputer{Français}{Langue martenelle}{Allemand}{Lu, écrit, parlé}
+\cvcomputer{Anglais}{Courant}{Portuguais}{Lu, écrit, parlé}
+
+\section{Intérêts}
+\cvline{Musique}{Altiste et trompettiste en orchestre et en fanfare. Amateur de
+  musique classique et jazz.}
+\cvline{Sports}{Badminton, randonnée et ski de fond.}
+\cvline{Pyrotechnie}{Artificier formé C4/T2.}
+
+\closesection{}
+\pagebreak
+        
+% Academic
+\section{Thèse de doctorat}
+\cvline{Titre}{Flot de conception pour l'ultra-faible consommation : %
+  échantillonage non uniforme et circuits asynchrone}
+\cvline{Encadrement}{Laurent Fesquet (Directeur), Rodrigo Possamai
+  Bastos (Co-encadrant)}
+\cvline{Résumé}{%
+  L'internet des objets nécessite le développement de plateformes peu
+  consommantes embarquant actuateurs, capteurs et traîtement du
+  signal. L'échantillonage et les circuits basés sur les évènements
+  permettent de réduire la quantité de données échantillées,
+  l'activité du circuit et donc la consommation. Pour aider les
+  concepteurs dans le développement rapide de plateformes ultra-faible
+  consommation et basées sur les évènements, cette thèse présente un
+  flot complet ALPS: \ALPS{}. Le framework ALPS permet de choisir et
+  simuler un schéma d'échantillonage spécifique au signal visé et de
+  synthétiser un circuit asynchrone dédié pour traîter les données
+  échantillées non uniformément.}
+\cvline{Mots clés}{échantillonage non uniforme, circuits asynchrones,
+  synthèse de haut niveau}
+
+\section{Enseignement}
+\cventry{2015---2017}{Monitorat}{Phelma}{Grenoble, France}{128h Eq. TD}{%
+          \begin{itemize}
+          \item Travaux dirigés niveau M1 : OS et Réseau (64h), Conception VHDL (32h)
+          \item Tutorat de projets étudiants niveau L3 (12h)
+          \item Ateliers conception Nano@School (18h) : Sensibiliser des lycéens
+            aux outils de la microélectronique.
+          \end{itemize}
+        }
+
+
+\section{Publications}
+\begingroup
+\renewcommand{\section}[1]{}%
+%\renewcommand{\chapter}[2]{}% for other classes
+\sethintscolumntowidth{[1]}
+\renewcommand{\refname}{}
+\nocite{Simatic17a, Skaf17, Qaisar17, El-Hadbi17, Simatic16a, Simatic16, Simatic15}
+\bibliographystyle{IEEEtran}
+\subsection{Conférences internationales à comité de relecture}
+\bibliography{publications}
+\endgroup
+\end{document}
