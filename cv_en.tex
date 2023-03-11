@@ -1,120 +1,212 @@
-\documentclass[11pt, a4paper]{moderncv}
-\moderncvtheme[orange]{classic}
+\documentclass[a4paper]{MagicalCV}
 
-\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+% Padding lists on the left
+\usepackage{enumitem}
+\setlist{labelindent=0pt, labelsep=2pt, leftmargin=6pt}
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
 
-% Adjust the page margins
-\usepackage[scale=0.85]{geometry}
-\recomputelengths
-\newcommand{\ALPS}{Architectural tools for ultra-Low Power (event-driven) Systems}
-%\sethintscolumntowidth{November 2014}
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Personal data
-\firstname{Jean}
-\familyname{Simatic}
-\address{30 rue Félix Esclangon}{38000 Grenoble, France}
-\mobile{+33 6 28 13 37 12}
-\email{jean@simatic.org}
-%\photo[64pt]{}
-%\nopagenumbers{}
-\title{Asynchronous microelectronics PhD candidate}
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
 \begin{document}
-\maketitle
 
-\vspace{-.75cm}
+% Last update time
+\lastupdated
 
-\section{Education}
-\cventry{2014 --- 2017}{PhD Thesis}{TIMA Laboratory}{Grenoble, France}{}{%
-  Design flow for ultra-low power: non-uniform sampling and asynchronous circuits}
-\cventry{2013 --- 2014}{Master}{ENSTA}{%
-  Robotics and Embedded Systems}{}{%
-  Multiprocessors on chip, embedded software, robotics, mecatronics}
-\cventry{2013 --- 2014}{Master}{UPMC}{%
-  Electronic Systems and Computer Systems}{}{%
-  Mixed and analog circuit design, noise, design for test, MEMS}
-\cventry{2010 --- 2013}{Engineering}{{\'E}cole polytechnique}{Electrical
-  Engineering major}{}{Digital circuit design, processor architecture,
-  semi-conductors, optoelectronics,\\ network (Internet), statistics}
-
-\section{Experience}
-\cventry{2017 --- Auj.}{Startup incubation and executive direction}{Hawai.tech}%
-        {Grenoble, France}{}{%
-          \begin{itemize}
-          \item Design of a modular architecture for low-power probabilistic circuits.
-          \item Commercial and financial development.
-          \end{itemize}
-        }
-\cventry{2014\\6 months}{Intern}{Tiempo}%
-        {Montbonnot Saint Martin, France}{}{%
-          \begin{itemize}
-          \item Design of a verification tool for standard cells Verilog modules
-          \item Evaluation of a commercial fault simulator on QDI circuits
-          \end{itemize}
-        }
-\cventry{2013\\4 months}{Intern}{Asynchronous Research Center}%
-        {Portland (Oregon), USA}{}{%
-          \begin{itemize}
-          \item Design of asynchronous IP for merge sort
-          \item Contribution to the development of a CAD tool (ARCWelder)
-          \end{itemize}
-        }
-\cventry{2012\\1 months}{Intern}{EADS Astrium, Digital electronic department}%
-        {{\'E}lancourt, France}{}{%
-          \begin{itemize}
-          \item Development of a test environment for a spatial CAN bus
-          \end{itemize}
-        }
-\cventry{2011 --- 2012\\1 year}{Electronic designer and treasurer}{Robotic
-  club at {\'E}cole polytechnique}%
-        {}{}{%
-          Participation to French Robotic Cup
-          \begin{itemize}
-          \item Design and fabrication of the electronic boards of the robot
-          \item Financial management of the project
-          \end{itemize}
-        }
-
-\section{Skills}
-\cvline{EDA Tools}{ModelSim, Design Compiler, Quartus}
-\cvline{Programming}{VHDL, Verilog, SystemC, Spice, Python, Java, GNU Make, C/C++, PHP, Caml}
-\cvline{OS}{Linux (Ubuntu, ArchLinux), Windows, RTEMS}
-\cvline{Misc}{Git, Subversion, \LaTeX, Scilab, Matlab, Eclipse}
-
-\section{Languages}
-\cvcomputer{French}{Native language}{German}{Conversational}
-\cvcomputer{English}{Fluent}{Portuguese}{Conversational}
-
-\section{Interests}
-\cvline{Music}{Viola and trumpet player in orchestras and marching bands. Classical and Jazz amateur.}
-\cvline{Sports}{Badminton, hiking and cross-country skiing.}
-\cvline{Pyrotechnics}{C4/T2 trained firework firer.}
-
-\closesection{}
-\pagebreak
-
-\sethintscolumntowidth{Co-advisor}
-
-% Academic
-\section{PhD Thesis}
-\cvline{Title}{Design flow for ultra-low power: Non-uniform sampling and
-  asynchronous circuits}
-\cvline{Advisor}{Laurent Fesquet}
-\cvline{Co-advisor}{Rodrigo Possamai Bastos}
-\cvline{Abstract}{%
-  The Internet of Things requires developing ultra-low power platforms embedding
-  actuators, sensors, and signal processors. Event-driven sampling and circuitry
-  allow reducing the amount of sampled data, the system activity, and therefore
-  the power consumption. For helping designers in rapidly developing
-  event-driven ultra-low power platforms, we have devised a complete framework
-  named ALPS: \ALPS{}. ALPS framework will allow to choose and simulate a
-  signal-specific sampling scheme, and to synthesize a dedicated event-driven
-  circuit for processing the non-uniformly sampled data. The estimated power
-  reduction factor for a the event-driven version of a filter systems is from 3
-  to 30 depending on the input signal activity.
+% Title name
+\namesection{Jean}{Simatic}{
+\email{\href{mailto:jean@simatic.org}{jean@simatic.org}}
+\phone{+33 (0)6 28 13 12}
+\github{\href{https://github.com/jsimatic}{jsimatic}}
+\linkedin{\href{https://www.linkedin.com/in/jean-simatic/}{jean-simatic}}
+\printinfo{\faGraduationCap}{\href{https://scholar.google.com/citations?user=57mWePYAAAAJ&hl=en&oi=ao}{scholar}}
+\printinfo{\faGamepad}{\href{https://www.codingame.com/profile/914e5e6b4782c8b6dd1af4f35ef54c96249679}{CodingGame}}
 }
+% Column one
+\begin{minipage}[t]{0.32\textwidth} 
 
-\renewcommand{\refname}{Publications}
-\nocite{Simatic17a, Skaf17, Qaisar17, El-Hadbi17, Simatic16a, Simatic16, Simatic15}
-\bibliographystyle{IEEEtran}
-\bibliography{publications}
+% Education
+\cvsection{Education} 
+
+\subsection{Univ Grenoble Alpes}
+\descript{PhD in circuit design/HLS}
+\cvevent{2014 -- 2017}{Grenoble, FR}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Design flow for ultra-low power: Non-uniform sampling and asynchronous circuits
+\sectionsep
+
+\subsection{ENSTA ParisTech}
+\descript{Eng. Robotics and embedded systems}
+\cvevent{2013 -- 2014}{Palaiseau, FR}
+Multiprocessors on chip, embedded software, robotics, mecatronics
+\sectionsep
+
+\subsection{Univ. Pierre \& Marie Curie}
+\descript{MSc. Electronic systems and Computer systems}
+\cvevent{2013 -- 2014}{Paris, FR}
+Mixed and analog circuit design, noise, design for test, MEMS
+\sectionsep
+
+\subsection{\'Ecole polytechnique}
+\descript{Eng. Electrical Engineering}
+\cvevent{2010 -- 2013}{Palaiseau, FR}
+Digital circuit design, processor architecture, semi-conductors, optoelectronics,
+network (Internet), statistics. French Robotics Cup.
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+
+\newcommand\tb{\textbullet\xspace}
+
+% TODO: \faCode{} 
+\descript{\bf Development}
+\begin{itemize}
+\item Python \tb Pytest \tb Pandas \tb Conda
+\item C/C++ \tb Rust \tb Make \tb Shell \tb Tcl
+\item Git \tb Subversion \tb VS Code \tb Emacs
+\item Docker \tb Vagrant \tb Kubernetes
+\end{itemize}
+\sectionsep
+
+\descript{\bf \faSitemap{} Digital electronic}
+
+\begin{itemize}
+\item Vivado \tb Vitis HLS \tb Vitis \tb Quartus
+\item SystemVerilog \tb Verilog \tb VHDL \tb SystemC \tb VHDL-AMS \tb Spice
+\item DesignCompiler \tb PrimeTime \tb ModelSim \tb Innovus
+\end{itemize}
+\sectionsep
+
+\descript{\bf \faDesktop{} Software}
+
+\begin{itemize}
+\item Ubuntu \tb ArchLinux \tb CentOS \tb Win
+\item OVH cloud \tb AWS \tb SSH \tb Nginx
+\item Jira \tb Confluence \tb \LaTeX \tb Office
+\end{itemize}
+\sectionsep
+
+\descript{\bf \faComments{} Languages}
+
+\cvskill{French}{5}
+\cvskill{English}{4.5}
+\cvskill{Portuguese}{2}
+\cvskill{German}{1}
+
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.67\textwidth} 
+
+% Experience
+\cvsection{Work Experience}
+
+\runsubsection{Deeptech Startup Chief Technology Officer} \\
+\cvcompanyevent{HawAI.tech}{Feb 2019 -- Ongoing}{Grenoble, FR} 
+\begin{tightemize}
+\item Manage 10-person technical team (Scrum master then Product Owner).
+\item Design of a modular architecture for low-power probabilistic circuits.
+\item Implementation in software, FPGA (AWS F1) and ACAP (Xilinx Versal)
+  using RTL and HLS.
+\item Install and maintain the company's web services on cloud servers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Electronics R\&D Engineer \textbullet{} Stratup incubation} \\
+\cvcompanyevent{Probayes}{Jan 2018 -- Feb 2019}{Grenoble, FR} 
+\begin{tightemize}
+\item Design highly efficient Bayesian sensor fusion and Bayesian filters
+  using stochastic computing. Benchmark on Intel Cyclone V.
+\item Lead legal, financial and business structuration for the spin-off
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Asynchronous Circuits PhD candidate} \\
+\cvunivevent{TIMA Laboratory}{Nov 2014 -- Nov 2017}{Grenoble, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Parse synchrounous FSM (from AUGH HLS) and generate asynchronous bundle data
+  controllers using new synchronization protocol.
+\item Design and test circuits for non-uniform sampling and filters. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Asynchronous Circuits Verification Intern} \\
+\cvcompanyevent{Tiempo Secure}{April 2014 -- Oct 2014}{Saint-Martin d'Hères, FR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Design of a verification tool for standard cells Verilog modules
+\item Evaluation of a commercial fault simulator on QDI circuits
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Asynchronous Circuits Design Intern} \\
+\cvuniveventnonboxed{Async Research Center}{April 2013 -- Aug 2013}{Porland, OR, USA} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Design of asynchronous IP for merge sort
+\item Contribution to the development of a CAD tool (ARCWelder)
+\end{tightemize}
+\sectionsep
+
+
+% Recent Projects
+\cvsection{Recent Projects} 
+
+\runsubsection{Test and generation of parametrized IP blocks} \\
+\cvcompanyevent{HawAI.tech}{Aug 2022 – Feb 2023}{Grenoble, FR} 
+Python set of utilities to handle in-house developped IP blocks.
+Used Jinja templates to generate IP based on YAML config. Pytest fixtures
+and parameterization to run parallelized regression tests.
+\sectionsep
+
+\runsubsection{Rust training} \\
+\cvcompanyevent{Side-project}{Sep 2022 – Nov 2022}{Grenoble, FR} 
+Learn Rust by the book, and solving puzzles. Small webscrapping and data plotting
+project. Share leant concepts with a tutorial for HawAI.tech's team.
+\sectionsep
+
+\runsubsection{Bayesian grammar for an efficient OCR pipeline} \\
+\cvcompanyevent{HawAI.tech}{June 2021 – Dec 2021}{Grenoble, FR} 
+Integrate industrial client existing knowledge in Bayesian model (beam search
+based) to correct errors of a PP OCR reader. Results post-processing and visualization
+with pandas and matplotlib. Pipeline delivered in Docker.
+\sectionsep
+
+\runsubsection{FPGA Acceleration of Bayesian Matrix factorization} \\
+\cvcompanyevent{HawAI.tech}{Nov 2020 – Oct 2021}{Grenoble, FR} 
+Specify architecture in particular AXI and AXI-L interface with AWS F1 shell.
+Develop AXI-Stream vector processing core. Co-develop Python API to generate
+modularely handle each computation steps and manage the FPGA execution from a
+Jupyter notebook. Demonstrated 5x speed/W on MovieLens.
+\sectionsep
+
+\end{minipage}
 \end{document}
