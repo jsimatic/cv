@@ -81,7 +81,7 @@
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
 
-\newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{0.5em}}}
+\newcommand{\printinfo}[2]{\mbox{\textcolor{awesome}{#1}\hspace{0.5em}#2\hspace{0.5em}}}
 
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
@@ -348,13 +348,6 @@ Last Updated on \today
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
-% Setting up Hyperlink
-\hypersetup{%
-  pdftitle={},
-  pdfauthor={},
-  pdfsubject={},
-  pdfkeywords={}
-}
 
 % Setting up events location and date
 \newcommand{\cvevent}[2]{
@@ -363,17 +356,17 @@ Last Updated on \today
 
 % Setting up events location and date and company
 \newcommand{\cvcompanyevent}[3]{
-  {\makebox[0.33\linewidth][l]{\color{awesome-purple}\faIndustry \hspace{0.2em}\textsc{#1}}%
+  {\makebox[0.33\linewidth][l]{\color{awesome}\faIndustry \hspace{0.2em}\textsc{#1}}%
   \ifstrequal{#2}{}{}{\makebox[0.33\linewidth][l]{\faCalendar\hspace{0.2em}#2}}
   \ifstrequal{#3}{}{}{\makebox[0.33\linewidth][l]{\faMapMarker\hspace{0.2em}#3}}\par}}
 
 % Setting up events location and date and university
 \newcommand{\cvunivevent}[3]{
-  {\makebox[0.33\linewidth][l]{\color{awesome-purple}\faUniversity \hspace{0.2em}\textsc{#1}}%
+  {\makebox[0.33\linewidth][l]{\color{awesome}\faUniversity \hspace{0.2em}\textsc{#1}}%
   \ifstrequal{#2}{}{}{\makebox[0.33\linewidth][l]{\faCalendar\hspace{0.2em}#2}}
   \ifstrequal{#3}{}{}{\makebox[0.33\linewidth][l]{\faMapMarker\hspace{0.2em}#3}}\par}}
 \newcommand{\cvuniveventnonboxed}[3]{
-  {{\color{awesome-purple}\faUniversity \hspace{0.2em}\textsc{#1}}%
+  {{\color{awesome}\faUniversity \hspace{0.2em}\textsc{#1}}%
   \ifstrequal{#2}{}{}{{\quad\faCalendar\hspace{0.2em}#2}}
   \ifstrequal{#3}{}{}{{\quad\faMapMarker\hspace{0.2em}#3}}\par}}
 
